@@ -35,15 +35,6 @@ colorscheme darktheme
 [[plugins]]
 repo = 'cohama/lexima.vim'
 
-# Git
-[[plugins]]
-repo = 'prabirshrestha/vim-lsp'
-on_ft = ['python', 'go']
-depends = ['async.vim', 'deoplete-vim-lsp']
-hook_add = '''
-let g:lsp_diagnostics_echo_cursor = 1
-'''
-
 # Markdown
 [[plugins]]
 repo = 'kannokanno/previm'
@@ -160,12 +151,6 @@ repo = 'vim-airline/vim-airline-themes'
 
 ## -----*----- コード補完 -----*----- ##
 [[plugins]]
-repo = 'Shougo/neocomplete.vim'
-[[plugins]]
-repo = 'Shougo/neosnippet.vim'
-[[plugins]]
-repo = 'Shougo/neosnippet-snippets'
-[[plugins]]
 repo = 'sheerun/vim-polyglot'
 [[plugins]]
 repo = 'ervandew/supertab'
@@ -179,7 +164,6 @@ hook_add = '''
 ""Diagnosticsの、左横のアイコンの色設定
 highlight CocErrorSign ctermfg=15 ctermbg=196
 highlight CocWarningSign ctermfg=0 ctermbg=172
-
 ""以下ショートカット
 "ノーマルモードで
 "スペース2回でCocList
@@ -194,6 +178,14 @@ nmap <silent> <space>rf <Plug>(coc-references)
 nmap <silent> <space>rn <Plug>(coc-rename)
 "スペースfmtでFormat
 nmap <silent> <space>fmt <Plug>(coc-format)
+'''
+
+## -----*----- Git関連 -----*----- ##
+[[plugins]]
+repo ='lambdalisue/gina.vim'
+hook_add = '''
+call gina#custom#command#option('status', '--opener', 'vsplit')
+call gina#custom#command#option('diff', '--opener', 'vsplit')
 '''
 
 ## -----*----- HTML -----*----- ##
@@ -223,3 +215,5 @@ repo = 'kazukazuinaina/Weather.vim'
 [[plugins]]
 repo = 'itchyny/calendar.vim'
 
+[[plugins]]
+repo = 'andymass/vim-matchup'
