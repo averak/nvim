@@ -128,7 +128,7 @@ set scrolloff=3
 set laststatus=2
 set modeline
 set modelines=10
-set clipboard=unnamed,autoselect
+set clipboard=unnamed
 set title
 set titleold="Terminal"
 set titlestring=%F
