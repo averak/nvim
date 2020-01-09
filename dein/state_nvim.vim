@@ -10,7 +10,14 @@ let &runtimepath = '/Users/abetatsuya/.config/nvim/dein/repos/github.com/Shougo/
 filetype off
 xmap ga <Plug>(EasyAlign)
 nmap ga <Plug>(EasyAlign)
-let g:airline#extensions#virtualenv#enabled = 1
+let g:airline#extensions#tabline#enabled = 1
+let g:airline_powerline_fonts = 1
+let g:airline#extensions#tabline#buffer_idx_mode = 1
+let g:airline#extensions#whitespace#mixed_indent_algo = 1
+let g:airline#extensions#term#enabled = 0
+let g:airline#extensions#nerdtree_statusline = 0
+let g:airline#extensions#whitespace#enabled = 0
+let g:airline_theme = 'dark'
 if !exists('g:airline_symbols')
   let g:airline_symbols = {}
 endif
