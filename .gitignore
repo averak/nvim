@@ -1,6 +1,5 @@
 .DS_Store
 dein/repos
 dein/.cache
-dein/cache_vim
-dein/state_vim.vim
-sessions
+dein/cache_nvim
+dein/state_nvim.vim
