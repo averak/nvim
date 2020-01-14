@@ -25,6 +25,8 @@ nmap ga <Plug>(EasyAlign)
 
 # Color scheme
 [[plugins]]
+repo='morhetz/gruvbox'
+[[plugins]]
 repo = 'whatyouhide/vim-gotham'
 hook_add = '''
 syntax enable
