@@ -50,7 +50,7 @@ repo = 'tyru/open-browser.vim'
 
 
 [[plugins]]
-repo = 'w0rp/ale'
+repo = 'dense-analysis/ale'
 hook_add = '''
 " 保存時のみ実行する
 let g:ale_lint_on_text_changed = 0
@@ -76,9 +76,10 @@ repo = 'twitvim/twitvim'
 [[plugins]]
 repo = 'junegunn/fzf'
 build = './install'
-[[plugins]]
-repo = 'junegunn/fzf.vim'
-
+hook_add = '''
+"スペースffでFZF
+nmap <silent> <space>ff :<C-u>FZF<cr>
+'''
 ## -----*----- NERDTree -----*----- ##
 [[plugins]]
 repo = 'scrooloose/nerdtree'
@@ -158,8 +159,8 @@ highlight CocWarningSign ctermfg=0 ctermbg=172
 "ノーマルモードで
 "スペース2回でCocList
 nmap <silent> <space><space> :<C-u>CocList<cr>
-"KでHover
-nmap <silent> K :<C-u>call CocAction('doHover')<cr>
+"HでHover
+nmap <silent> H :<C-u>call CocAction('doHover')<cr>
 "TでDefinition
 nmap <silent> T <Plug>(coc-definition)
 "スペースrfでReferences
