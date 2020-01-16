@@ -170,7 +170,7 @@ nmap <silent> <space>rf <Plug>(coc-references)
 nmap <silent> <space>rn <Plug>(coc-rename)
 "スペースfmtでFormat
 nmap <silent> <space>fmt <Plug>(coc-format)
-''
+'''
 
 ## -----*----- Git関連 -----*----- ##
 [[plugins]]
