@@ -30,27 +30,16 @@ augroup END
 
 
 "" -----*----- Shortcuts -----*----- ""
-""htcn to  arrow
+""htkn to  arrow
 nnoremap k k
 nnoremap t j
 nnoremap h h
 nnoremap n l
 
-vnoremap c k
+vnoremap k k
 vnoremap t j
 vnoremap h h
 vnoremap n l
-"" dein
-:command PlugUpdate call dein#update()
-:command PlugInstall call dein#install()
-
-"" twitter
-:command Tpost PosttoTwitter
-:command Tread FriendsTwitter
-:command Tswitch SwitchLoginTwitter
-
-"" delete white spaces
-:command Ds FixWhitespace
 
 "" 矢印キー
 noremap <Up> :Gina diff<CR>
@@ -88,9 +77,6 @@ nnoremap <Tab> gt
 nnoremap <S-Tab> gT
 nnoremap <Leader>t :tabnew<CR>
 
-"" Sft + y => yunk to EOL
-nnoremap Y y$
-
 "" +(on \d) => increment
 nnoremap + <C-a>
 
@@ -104,12 +90,6 @@ vmap <C-c> :w !pbcopy<CR><CR>
 " move line/word
 nmap N $
 nmap H 0
-nmap <C-f> W
-nmap <C-b> B
-imap <C-e> <C-o>$
-imap <C-a> <C-o>0
-imap <C-f> <C-o>W
-imap <C-b> <C-o>B
 
 "" -----*----- Base Settings -----*----- ""
 set encoding=utf-8
@@ -142,6 +122,7 @@ set scrolloff=3
 set laststatus=2
 set modeline
 set modelines=10
+set wildmenu
 set clipboard=unnamed
 set title
 set titleold="Terminal"
@@ -150,6 +131,7 @@ set statusline=%F%m%r%h%w%=(%{&ff}/%Y)\ (line\ %l\/%L,\ col\ %c)\
 set autoread
 set noerrorbells visualbell t_vb=
 set mouse=a
+"set whichwrap=b,s,<,>,[,]
 set whichwrap=h,l
 highlight Pmenu ctermbg=233 ctermfg=241
 highlight PmenuSel ctermbg=233 ctermfg=166
