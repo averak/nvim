@@ -81,4 +81,5 @@ space + dir   | NERDTree
 ## Installation
 ```sh
 $ mkdir -p ~/.config/
-$ git clone https://github.com/AjxLab/neovim ~/.config/nvim ```
+$ git clone https://github.com/AjxLab/neovim ~/.config/nvim
+```
