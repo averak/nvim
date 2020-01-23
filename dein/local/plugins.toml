@@ -41,17 +41,6 @@ nmap ga <Plug>(EasyAlign)
 [[plugins]]
 repo = 'cohama/lexima.vim'
 
-# Markdown
-[[plugins]]
-repo = 'previm/previm'
-hook_add = '''
-nnoremap <silent> <C-p> :PrevimOpen<CR>
-let g:vim_markdown_folding_disabled = 1
-let g:previm_enable_realtime = 1
-'''
-[[plugins]]
-repo = 'tyru/open-browser.vim'
-
 
 [[plugins]]
 repo = 'dense-analysis/ale'

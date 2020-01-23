@@ -2,3 +2,16 @@
 repo = 'tpope/vim-endwise'
 on_ft = 'ruby'
 on_event = 'InsertEnter'
+
+[[plugins]]
+repo = 'previm/previm'
+hook_post_source = '''
+nnoremap <silent> <C-p> :PrevimOpen<CR>
+let g:vim_markdown_folding_disabled = 1
+let g:previm_enable_realtime = 1
+'''
+on_ft = 'markdown'
+
+[[plugins]]
+repo = 'tyru/open-browser.vim'
+on_source = ['previm']
