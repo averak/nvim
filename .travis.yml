@@ -24,4 +24,4 @@ env:
   - VIM_VERSION=7.4
 
 script:
-  - vint vimrc
+  - vint init.vim
