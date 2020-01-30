@@ -1,6 +1,8 @@
 my neovim config
 ================
 
+[![Build Status](https://api.travis-ci.org/AjxLab/neovim.svg?branch=master)](https://travis-ci.org/AjxLab/neovim)
+
 ## Usage
 ### ウィンドウ操作
 Keybind       | Description
