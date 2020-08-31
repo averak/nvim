@@ -13,5 +13,6 @@
     }
   },
   "suggest.enablePreselect": true,
+  "solargraph.formatting": true,
   "solargraph.commandPath": "/Users/abelab/.rbenv/shims/solargraph"
 }
