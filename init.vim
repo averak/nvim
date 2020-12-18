@@ -152,7 +152,7 @@ command! -nargs=0 Format :call CocAction('format')
 " dein.vim setting
 "========================================="
 " プラグインが実際にインストールされるディレクトリ
-let s:dein_dir = expand('~/.config/nvim/dein')
+let s:dein_dir = expand('~/.cache/dein')
 " dein.vim 本体
 let s:dein_repo_dir = s:dein_dir . '/repos/github.com/Shougo/dein.vim'
 " dein.vim がなければ github から落としてくる
@@ -169,9 +169,8 @@ if dein#load_state(s:dein_dir)
 
   " プラグインリストを収めた TOML ファイル
   " 予め TOML ファイル（後述）を用意しておく
-  let g:rc_dir    = expand('~/.config/nvim/dein/local')
-  let s:toml      = g:rc_dir . '/plugins.toml'
-  let s:lazy_toml = g:rc_dir . '/plugins_lazy.toml'
+  let s:toml = fnamemodify(expand('<sfile>'), ':h').'/plugin/dein.toml'
+  let s:lazy_toml = fnamemodify(expand('<sfile>'), ':h').'/plugin/dein_lazy.toml'
 
    " TOML を読み込み、キャッシュしておく
   call dein#load_toml(s:toml,      {'lazy': 0})
